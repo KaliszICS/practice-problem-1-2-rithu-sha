@@ -1,13 +1,9 @@
 public class PracticeProblem {
     // Function 1: Checks if the index is valid in the array
     public static boolean validIndex(int[] array, int index) {
-        try {
-            int value = array[index]; // Try to access the index
-            return true;
-        } catch (ArrayIndexOutOfBoundsException e) {
-            return false;
-        }
+        return index >= 0 && index < array.length;
     }
+    
 
 	   // Function 2: Divides two integers with exception handling
 	   public static int divide(int a, int b) {
